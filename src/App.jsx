@@ -25,7 +25,7 @@ function App() {
   let routes = createBrowserRouter([{
     path: "", element: <Layout />, children:
       [
-        { path: "Login", element:<Login/>  },
+        { index:true,path: "Login", element:<Login/>  },
         { path: "Brands", element:<ProtectedRoutes><Brands/></ProtectedRoutes>  },
         { path: "ResetCode", element:<ResetCode/> },
         { path: "ResetPass", element:<ResetPass/> },
